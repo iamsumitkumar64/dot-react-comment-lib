@@ -18,8 +18,17 @@
     "README.md",
     "LICENSE"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamsumitkumar64/birwal-react-comment-lib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iamsumitkumar64/birwal-react-comment-lib/issues"
+  },
+  "homepage": "https://github.com/iamsumitkumar64/birwal-react-comment-lib#readme",
   "keywords": [
     "react",
+    "react-comments",
     "nextjs",
     "mui",
     "material-ui",
@@ -34,7 +43,7 @@
     "prisma",
     "comment-tree"
   ],
-  "author": "Birwal",
+  "author": "Sumit Kumar (Birwal)",
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
@@ -45,18 +54,10 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.1",
-    "@hookform/resolvers": "^5.8.0",
-    "@mui/icons-material": "^9.3.1",
-    "@mui/material": "^9.3.1",
+    "@hookform/resolvers": "^3.0.0 || ^4.0.0 || ^5.0.0",
     "emoji-picker-react": "^4.19.1",
-    "next": "16.3.1",
-    "react": "19.2.8",
-    "react-dom": "19.2.8",
-    "react-hook-form": "^7.85.0",
-    "tsup": "^8.5.1",
-    "zod": "^3.25.76"
+    "react-hook-form": "^7.50.0",
+    "zod": "^3.23.0"
   },
   "peerDependencies": {
     "@emotion/react": "^11.0.0",
@@ -75,6 +76,10 @@
     }
   },
   "devDependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^9.3.1",
+    "@mui/material": "^9.3.1",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
@@ -82,7 +87,11 @@
     "babel-plugin-react-compiler": "1.0.0",
     "eslint": "^9",
     "eslint-config-next": "16.3.1",
+    "next": "16.3.1",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
     "tailwindcss": "^4",
+    "tsup": "^8.5.1",
     "typescript": "^5"
   }
 }
