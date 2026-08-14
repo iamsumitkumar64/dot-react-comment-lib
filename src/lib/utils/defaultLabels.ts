@@ -1,0 +1,33 @@
+import { CommentLabels } from '../types';
+
+export const defaultLabels: CommentLabels = {
+  title: 'Comments',
+  writeCommentPlaceholder: 'Write a thoughtful comment...',
+  writeReplyPlaceholder: 'Write a reply...',
+  postButton: 'Comment',
+  replyButton: 'Reply',
+  cancelButton: 'Cancel',
+  saveButton: 'Save changes',
+  editAction: 'Edit',
+  deleteAction: 'Delete',
+  replyAction: 'Reply',
+  pinAction: 'Pin to top',
+  unpinAction: 'Unpin',
+  reportAction: 'Report',
+  editedTag: 'edited',
+  pinnedTag: 'Pinned',
+  deletedMessage: 'This comment has been deleted.',
+  loadMoreReplies: 'Load more replies',
+  hideReplies: 'Hide replies',
+  viewReplies: (count: number) =>
+    count === 1 ? '1 reply' : `${count} replies`,
+  noComments: 'No comments yet. Start the conversation!',
+  sortNewest: 'Newest first',
+  sortOldest: 'Oldest first',
+  sortPopular: 'Most upvoted',
+  confirmDeleteTitle: 'Delete Comment',
+  confirmDeleteBody: 'Are you sure you want to delete this comment? This action cannot be undone.',
+  validationRequired: 'Comment cannot be empty.',
+  validationMinLength: (min: number) => `Comment must be at least ${min} characters.`,
+  validationMaxLength: (max: number) => `Comment cannot exceed ${max} characters.`,
+};

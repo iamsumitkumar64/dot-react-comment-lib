@@ -1,0 +1,22 @@
+# Source files
+src/
+public/
+.next/
+node_modules/
+
+# Config files
+tsconfig.json
+tsconfig.build.json
+tsup.config.ts
+next.config.ts
+postcss.config.mjs
+eslint.config.mjs
+tailwind.config.js
+CLAUDE.md
+AGENTS.md
+chat-db.entity.ts
+db-schema/
+
+# Logs & scratch
+*.log
+.DS_Store
