@@ -180,7 +180,7 @@ export function CommentProvider<T = unknown>({
       setActiveReplyId(null);
       return true;
     } catch (err) {
-      console.error('[birwal-react-comment-lib] Error submitting comment:', err);
+      console.error('[dot-react-comment-lib] Error submitting comment:', err);
       return false;
     }
   }, [findComment, onSubmitComment]);
@@ -193,7 +193,7 @@ export function CommentProvider<T = unknown>({
       setActiveEditId(null);
       return true;
     } catch (err) {
-      console.error('[birwal-react-comment-lib] Error editing comment:', err);
+      console.error('[dot-react-comment-lib] Error editing comment:', err);
       return false;
     }
   }, [findComment, onEditComment]);
@@ -205,7 +205,7 @@ export function CommentProvider<T = unknown>({
       await onDeleteComment?.({ id, comment });
       return true;
     } catch (err) {
-      console.error('[birwal-react-comment-lib] Error deleting comment:', err);
+      console.error('[dot-react-comment-lib] Error deleting comment:', err);
       return false;
     }
   }, [findComment, onDeleteComment]);
@@ -219,7 +219,7 @@ export function CommentProvider<T = unknown>({
       await onReactComment?.({ id, emoji, comment, action });
       return true;
     } catch (err) {
-      console.error('[birwal-react-comment-lib] Error reacting to comment:', err);
+      console.error('[dot-react-comment-lib] Error reacting to comment:', err);
       return false;
     }
   }, [findComment, onReactComment]);
@@ -231,7 +231,7 @@ export function CommentProvider<T = unknown>({
       await onPinComment?.({ id, isPinned: !comment.isPinned, comment });
       return true;
     } catch (err) {
-      console.error('[birwal-react-comment-lib] Error pinning comment:', err);
+      console.error('[dot-react-comment-lib] Error pinning comment:', err);
       return false;
     }
   }, [findComment, onPinComment]);
@@ -243,7 +243,7 @@ export function CommentProvider<T = unknown>({
       await onReportComment?.({ id, comment });
       return true;
     } catch (err) {
-      console.error('[birwal-react-comment-lib] Error reporting comment:', err);
+      console.error('[dot-react-comment-lib] Error reporting comment:', err);
       return false;
     }
   }, [findComment, onReportComment]);

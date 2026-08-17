@@ -1,5 +1,5 @@
 {
-  "name": "birwal-react-comment-lib",
+  "name": "dot-react-comment-lib",
   "version": "1.0.0",
   "description": "High-performance, ultra-customizable nested threaded comments component library for React and Next.js built with MUI, React Hook Form, and Emoji Picker",
   "main": "./dist/index.js",
@@ -18,14 +18,6 @@
     "README.md",
     "LICENSE"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/iamsumitkumar64/birwal-react-comment-lib.git"
-  },
-  "bugs": {
-    "url": "https://github.com/iamsumitkumar64/birwal-react-comment-lib/issues"
-  },
-  "homepage": "https://github.com/iamsumitkumar64/birwal-react-comment-lib#readme",
   "keywords": [
     "react",
     "react-comments",
@@ -43,7 +35,7 @@
     "prisma",
     "comment-tree"
   ],
-  "author": "Sumit Kumar (Birwal)",
+  "author": "Sumit Kumar (dot)",
   "license": "MIT",
   "scripts": {
     "dev": "next dev",

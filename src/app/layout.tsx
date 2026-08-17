@@ -8,7 +8,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Birwal Nested Comments | Universal Threaded Comments Library for React & Next.js",
+  title: "dot Nested Comments | Universal Threaded Comments Library for React & Next.js",
   description: "Enterprise-grade, ultra-customizable nested threaded comments component library built with MUI, React Hook Form, and Emoji Picker. Universal DB schema mapping.",
 };
 

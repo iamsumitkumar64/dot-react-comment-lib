@@ -457,7 +457,7 @@ export default function LibraryDemoPage() {
   };
 
   // Generate dynamic sample code
-  const generatedCode = `import { NestedComments } from 'birwal-react-comment-lib';
+  const generatedCode = `import { NestedComments } from 'dot-react-comment-lib';
 
 export default function DiscussionPage() {
   const comments = ${JSON.stringify(commentsState.slice(0, 2), null, 2)};
@@ -510,7 +510,7 @@ export default function DiscussionPage() {
   if (!mounted) {
     return (
       <Box sx={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: '#090d16', color: '#ffffff' }}>
-        <Typography variant="body2" sx={{ fontWeight: 600 }}>Loading birwal-react-comment-lib...</Typography>
+        <Typography variant="body2" sx={{ fontWeight: 600 }}>Loading dot-react-comment-lib...</Typography>
       </Box>
     );
   }
@@ -551,7 +551,7 @@ export default function DiscussionPage() {
               <Box>
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                   <Typography variant="h6" sx={{ fontWeight: 800, fontSize: '1.2rem', letterSpacing: '-0.02em' }}>
-                    birwal-react-comment-lib
+                    dot-react-comment-lib
                   </Typography>
                   <Chip label="v1.0.0" size="small" color="primary" sx={{ height: 20, fontSize: '0.7rem', fontWeight: 700 }} />
                   <Chip label="npm package" size="small" variant="outlined" sx={{ height: 20, fontSize: '0.7rem' }} />
@@ -917,7 +917,7 @@ export default function DiscussionPage() {
                         Active <code>styles</code> Object:
                       </Typography>
                       <pre style={{ margin: 0, fontSize: '0.75rem', overflowX: 'auto', fontFamily: 'monospace' }}>
-{JSON.stringify(activeCustomStyles, null, 2)}
+                        {JSON.stringify(activeCustomStyles, null, 2)}
                       </pre>
                     </Paper>
 
@@ -965,7 +965,7 @@ export default function DiscussionPage() {
                           TypeORM Entity Definition (chat-db.entity.ts):
                         </Typography>
                         <pre style={{ margin: 0, fontSize: '0.8rem', overflowX: 'auto', fontFamily: 'monospace' }}>
-{`@Entity("chat")
+                          {`@Entity("chat")
 export class RoomChatEntity {
     @PrimaryGeneratedColumn('uuid')
     uuid: string;
@@ -999,7 +999,7 @@ export class RoomChatEntity {
                           Custom Field Mapping Configuration:
                         </Typography>
                         <pre style={{ margin: 0, fontSize: '0.8rem', overflowX: 'auto', fontFamily: 'monospace' }}>
-{`const customSchema = {
+                          {`const customSchema = {
   idKey: 'commentId',
   parentIdKey: 'replyToId',
   contentKey: 'body',
@@ -1063,8 +1063,8 @@ export class RoomChatEntity {
                         Step 1: Install Package
                       </Typography>
                       <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', bgcolor: 'background.paper', p: 1.5, borderRadius: 2, border: '1px solid', borderColor: 'divider' }}>
-                        <code style={{ fontSize: '0.85rem' }}>npm install birwal-react-comment-lib</code>
-                        <IconButton size="small" onClick={() => handleCopyCode('npm install birwal-react-comment-lib')}>
+                        <code style={{ fontSize: '0.85rem' }}>npm install dot-react-comment-lib</code>
+                        <IconButton size="small" onClick={() => handleCopyCode('npm install dot-react-comment-lib')}>
                           <ContentCopyRoundedIcon sx={{ fontSize: 16 }} />
                         </IconButton>
                       </Box>
