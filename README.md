@@ -3,11 +3,22 @@
 > **High-performance, ultra-customizable nested threaded comments library for React and Next.js**, built with Material UI (MUI), `emoji-picker-react`, `react-hook-form`, `@hookform/resolvers`, and `@emotion/styled`.
 
 [![npm version](https://img.shields.io/npm/v/dot-react-comment-lib.svg?style=flat-square)](https://www.npmjs.com/package/dot-react-comment-lib)
+[![npm downloads](https://img.shields.io/npm/dm/dot-react-comment-lib.svg?style=flat-square)](https://www.npmjs.com/package/dot-react-comment-lib)
+[![GitHub Repository](https://img.shields.io/badge/GitHub-dot--react--comment--lib-181717.svg?style=flat-square&logo=github)](https://github.com/iamsumitkumar64/dot-react-comment-lib)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg?style=flat-square)](https://www.typescriptlang.org/)
 [![React](<https://img.shields.io/badge/React-18%20%2F%2019-61dafb.svg?style=flat-square>)](https://react.dev)
 [![Next.js](<https://img.shields.io/badge/Next.js-App%20Router%20%2F%20Pages-black.svg?style=flat-square>)](https://nextjs.org/)
-[![Bundle Size](<https://img.shields.io/badge/Bundle-~31KB%20Minified-success.svg?style=flat-square>)](https://bundlephobia.com)
+[![Bundle Size](<https://img.shields.io/badge/Bundle-~31KB%20Minified-success.svg?style=flat-square>)](https://bundlephobia.com/package/dot-react-comment-lib)
+
+---
+
+## 🔗 Quick Links
+
+- 📦 **NPM Package**: [https://www.npmjs.com/package/dot-react-comment-lib](https://www.npmjs.com/package/dot-react-comment-lib)
+- 💻 **GitHub Repository**: [https://github.com/iamsumitkumar64/dot-react-comment-lib](https://github.com/iamsumitkumar64/dot-react-comment-lib)
+- 🐛 **Issues & Feedback**: [https://github.com/iamsumitkumar64/dot-react-comment-lib/issues](https://github.com/iamsumitkumar64/dot-react-comment-lib/issues)
+- 👤 **Author**: [Sumit Kumar (@iamsumitkumar64)](https://github.com/iamsumitkumar64)
 
 ---
 
@@ -402,7 +413,7 @@ export function OptimisticComments({ initialData }) {
 # 1. Build the lightweight minified bundle (creates ESM, CJS, and .d.ts in dist/)
 npm run build:lib
 
-# 2. Lotgin to npm
+# 2. Login to npm
 npm login
 
 # 3. Publish to npm registry

@@ -1,15 +1,31 @@
 {
   "name": "dot-react-comment-lib",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "High-performance, ultra-customizable nested threaded comments component library for React and Next.js built with MUI, React Hook Form, and Emoji Picker",
+  "homepage": "https://github.com/iamsumitkumar64/dot-react-comment-lib#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamsumitkumar64/dot-react-comment-lib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iamsumitkumar64/dot-react-comment-lib/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js"
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
     },
     "./package.json": "./package.json"
   },
@@ -35,7 +51,10 @@
     "prisma",
     "comment-tree"
   ],
-  "author": "Sumit Kumar (dot)",
+  "author": {
+    "name": "Sumit Kumar (dot)",
+    "url": "https://github.com/iamsumitkumar64"
+  },
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
