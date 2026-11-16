@@ -39,7 +39,6 @@ const CommentActionsComponent: React.FC<CommentActionsProps> = ({ comment }) => 
     renderers,
     activeReplyId,
     setActiveReplyId,
-    activeEditId,
     setActiveEditId,
     handleDeleteComment,
     handlePinComment,

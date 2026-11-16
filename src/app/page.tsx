@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo, useSyncExternalStore } from 'react';
 import {
   ThemeProvider,
   createTheme,
@@ -261,7 +261,11 @@ const stylePresets: Record<string, { label: string; styles: CommentCustomStyles 
 };
 
 export default function LibraryDemoPage() {
-  const [mounted, setMounted] = useState(false);
+  const mounted = useSyncExternalStore(
+    () => () => {},
+    () => true,
+    () => false
+  );
   const [darkMode, setDarkMode] = useState(false);
   const [activeTab, setActiveTab] = useState(0);
   const [copied, setCopied] = useState(false);
@@ -289,10 +293,6 @@ export default function LibraryDemoPage() {
 
   // Permission settings
   const [allowGuestReplies, setAllowGuestReplies] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   const currentUser = sampleUsers[selectedUserKey];
 
@@ -987,7 +987,7 @@ export class RoomChatEntity {
 }`}
                         </pre>
                         <Alert severity="success" sx={{ mt: 2, py: 0.5 }}>
-                          Just pass <code>schema="room-chat"</code> to automatically map <code>uuid</code>, <code>message_parent_uuid</code>, and <code>message</code>!
+                          Just pass <code>schema=&quot;room-chat&quot;</code> to automatically map <code>uuid</code>, <code>message_parent_uuid</code>, and <code>message</code>!
                         </Alert>
                       </Paper>
                     ) : (

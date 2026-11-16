@@ -91,31 +91,6 @@ const CommentComposerComponent: React.FC<CommentComposerProps> = ({
 
   const contentValue = watch('content') || '';
 
-  // Custom composer renderer slot
-  if (renderers.composer) {
-    return (
-      <>
-        {renderers.composer({
-          parentId,
-          placeholder,
-          isReply,
-          onSubmit: async (text) => {
-            if (isEdit && parentId) {
-              const ok = await handleEditComment(parentId, text);
-              if (ok) onSuccess?.();
-              return ok;
-            }
-            const ok = await handleSubmitComment(text, parentId);
-            if (ok) onSuccess?.();
-            return ok;
-          },
-          onCancel,
-          autoFocus,
-        })}
-      </>
-    );
-  }
-
   const defaultPlaceholder = isReply
     ? labels.writeReplyPlaceholder
     : labels.writeCommentPlaceholder;
@@ -164,6 +139,31 @@ const CommentComposerComponent: React.FC<CommentComposerProps> = ({
       }
     }, 50);
   }, [getValues, setValue, handleCloseEmoji]);
+
+  // Custom composer renderer slot
+  if (renderers.composer) {
+    return (
+      <>
+        {renderers.composer({
+          parentId,
+          placeholder,
+          isReply,
+          onSubmit: async (text) => {
+            if (isEdit && parentId) {
+              const ok = await handleEditComment(parentId, text);
+              if (ok) onSuccess?.();
+              return ok;
+            }
+            const ok = await handleSubmitComment(text, parentId);
+            if (ok) onSuccess?.();
+            return ok;
+          },
+          onCancel,
+          autoFocus,
+        })}
+      </>
+    );
+  }
 
   const authorForAvatar: CommentAuthor = currentUser || {
     id: 'current-user',

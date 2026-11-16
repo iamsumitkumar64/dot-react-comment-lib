@@ -24,10 +24,6 @@ const EmojiReactionPickerComponent: React.FC<EmojiReactionPickerProps> = ({ comm
   const theme = useTheme();
   const [anchorEl, setAnchorEl] = useState<HTMLButtonElement | null>(null);
 
-  if (!config.enableReactions) {
-    return null;
-  }
-
   // Permission check
   const canReact =
     typeof permissions.canReact === 'function'
@@ -50,6 +46,10 @@ const EmojiReactionPickerComponent: React.FC<EmojiReactionPickerProps> = ({ comm
   const handleQuickReaction = useCallback((emoji: string) => {
     handleReactComment(comment.id, emoji);
   }, [comment.id, handleReactComment]);
+
+  if (!config.enableReactions) {
+    return null;
+  }
 
   const isPickerOpen = Boolean(anchorEl);
   const reactions = comment.reactions || [];
